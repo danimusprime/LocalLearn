@@ -9,6 +9,9 @@ __pycache__/
 # Postgres
 database.ini
 
+# HerokuEnvironment
+hero.env
+
 # Distribution / packaging
 .Python
 build/
