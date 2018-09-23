@@ -2,7 +2,6 @@
 #!/usr/bin/python
 from configparser import ConfigParser
 
-
 def config(filename='database.ini', section='postgresql'):
     # create a parser
     parser = ConfigParser()
@@ -11,8 +10,8 @@ def config(filename='database.ini', section='postgresql'):
 
     # get section, default to postgresql
     db = {}
-    if parser.has_section(section):
-        params = parser.items(section)
+    if parser.has_section(postgresql):
+        params = parser.items(postgresql)
         for param in params:
             db[param[0]] = param[1]
     else:
